@@ -14,10 +14,11 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - ls -l target
 
 artifacts:
   files:
-    - target/*.war   # or *.war if your pom.xml uses <packaging>war</packaging>
+    - target/nextwork-web-project.war
 cache:
   paths:
     - '/root/.m2/**/*'
